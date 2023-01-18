@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Никита Ступин](https://up.htmlacademy.ru/htmlcss/36/user/2273629).
-* Наставник: `Неизвестно`.
+* Наставник: `Евгений Котов`.(https://htmlacademy.ru/profile/evgeniy_kotov)
 
 ---
 
