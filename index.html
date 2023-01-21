@@ -10,48 +10,211 @@
         <a class="navigation-logo" href="#">
           <img class="page-header-logo" src="" alt="Логотип сайта 'Девайс'">
         </a>
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <form class="navigation-search-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input type="text" name="navigation-search" placeholder="Поиск по сайту">
-              <button class="button navigation-search-button" type="submit">Найти</button>
+
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-user-item">
+            <form class="navigation-user-search-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label>
+                <img class="navigation-user-search-icon" src="" alt="Иконка поиска">
+                <input class="navigation-user-search" name="user-search" id="user-search" type="text" placeholder="Поиск по сайту">
+              </label>
+              <button class="button search-button" type="submit">Найти</button>
             </form>
           </li>
-          <li class="navigation-item">
-            <img class="login-image" src="" alt="Иконка входа">
-            <a class="button navigation-button-login">Войти</a>
+          <li class="navigation-user-item">
+            <a class="navigation-user-link" href="#">
+              <img class="navigation-user-login-icon" src="" alt="Иконка логина">
+              Вход
+            </a>
+          </li>
+          <li class="navigation-user-item">
+            <a class="navigation-user-link" href="#">
+              <img class="navigation-user-compare-icon" src="" alt="Иконка диаграммы">
+              Сравнить
+            </a>
+          </li>
+          <li class="navigation-user-item">
+            <a class="navigation-user-link" href="#">
+              <img class="navigation-user-basket-icon" src="" alt="Иконка корзины">
+              Корзина
+            </a>
           </li>
         </ul>
-        <ul class="navigation-user">
-          <li class="navigation-item">
-            <img class="diagramm-image" src="" alt="Иконка диаграммы">
-            <a class="button navigation-button-compare" href="#">Сравнить</a>
+
+        <ul class="navigation-list navigation-main">
+          <li class="navigation-main-item">
+            Каталог товаров
+            <button class="button catalog-button-close" type="button">
+              <img class="catalog-button-icon-close" src="" alt="Иконка развернуть каталог">
+              <span class="visually-hidden">Развернуть каталог</span>
+            </button>
           </li>
-          <li class="navigation-item">
-            <img class="shop-image" src="" alt="Иконка корзины">
-            <a class="button navigation-button-compare" href="#">Корзина</a>
+          <li class="navigation-main-item">
+            <a class="navigation-main-link" href="delivery.html">
+              Доставка
+            </a>
+          </li>
+          <li class="navigation-main-item">
+            <a class="navigation-main-link" href="garanty.html">
+              Гарантия
+            </a>
+          </li>
+          <li class="navigation-main-item">
+            <a class="navigation-main-link" href="contacts.html">
+              Контакты
+            </a>
           </li>
         </ul>
-        <ul class="navigation-list-catalog">
-          <li class="navigation-item">
-            <p>Каталог товаров</p>
-            <img class="button navigation-catalog-button-close"src="" alt="Кнопка развернуть каталог">
+
+        <ul class="navigation-inner-menu visually-hidden">
+          <li class="navigation-inner-item">
+            <a class="navigation-inner-link" href="#">
+              Виртуальная реальность
+            </a>
+          </li>
+          <li class="navigation-inner-item">
+            <a class="navigation-inner-link" href="#">
+              Моноподы для селфи
+            </a>
+          </li>
+          <li class="navigation-inner-item">
+            <a class="navigation-inner-link" href="#">
+              Экшн-камеры
+            </a>
+          </li>
+          <li class="navigation-inner-item">
+            <a class="navigation-inner-link" href="#">
+              Фитнес-браслеты
+            </a>
+          </li>
+          <li class="navigation-inner-item">
+            <a class="navigation-inner-link" href="#">
+              Умные часы
+            </a>
+          </li>
+          <li class="navigation-inner-item">
+            <a class="navigation-inner-link" href="#">
+              Квадрокоптеры
+            </a>
           </li>
         </ul>
-        <ul class="navigation-list-menu">
-          <li class="navigation-item">
-              <a class="navigation-link" href="deliver.html">Доставка</a>
-          </li>
-          <li class="navigation-item">
-              <a class="navigation-link" href="garanty.html">Гарантия</a>
-          </li>
-          <li class="navigation-item">
-              <a class="navigation-link" href="contacts.html">Контакты</a>
-          </li>
-      </ul>
       </nav>
     </header>
-    <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p> -->
+
+    <main class="main-index">
+      <h1 class="visually-hidden">Интернет-магазин 'Device'</h1>
+      <section class="adversting-item">
+        <ol class="adversting-list">
+          <li class="adversting-item current">
+            <div class="item-photos">
+              <h2 class="item-photo-title">Фотогалерея</h2>
+                <img class="slider-image" src="" alt="Фото товара">
+                <button class="slider-button slider-prev" type="button">
+                    <span class="visually-hidden">Предыдущее фото</span>
+                </button>
+                <button class="slider-button slider-next">
+                    <span class="visually-hidden">Следущее фото</span>
+                </button>
+
+                <ol class="photo-slider-pagination">
+                    <li class="photo-slider-pagination-item">
+                        <button class="photo-slider-pagination-button slider-pagination-button-current" type="button">
+                            <span class="visually-hidden">1 фото</span>
+                        </button>
+                    </li>
+                    <li class="photo-slider-pagination-item">
+                        <button class="photo-slider-pagination-button slider-pagination-button-current" type="button">
+                            <span class="visually-hidden">2 фото</span>
+                        </button>
+                    </li>
+                    <li class="photo-slider-pagination-item">
+                        <button class="photo-slider-pagination-button slider-pagination-button-current" type="button">
+                            <span class="visually-hidden">3 фото</span>
+                        </button>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="item-description">
+              <h2 class="item-description-title">Порхает как бабочка, жалит как пчела!</h2>
+              <p class="item-description">
+                Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+              </p>
+              <a class="item-description-link" href="#">
+                Подробнее
+              </a>
+              <ul class="characteristic-list">
+                <li class="chatacteristic-item">
+                  <b class="characteristic-title">800 м</b>
+                  <span class="characteristic-descript">Дальность полёта</span>
+                </li>
+                <li class="chatacteristic-item">
+                  <b class="characteristic-title">50 м</b>
+                  <span class="characteristic-descript">Радиус поражения</span>
+                </li>
+              </ul>
+            </div>
+
+            <button class="adversting-list-pagination-button slider-pagination-button-current" type="button">
+              <span class="visually-hidden">1 товар</span>
+            </button>
+          </li>
+
+          <li class="adversting-item">
+            <button class="adversting-list-pagination-button slider-pagination-button-current" type="button">
+              <span class="visually-hidden">2 товар</span>
+            </button>
+          </li>
+
+          <li class="adversting-item">
+            <button class="adversting-list-pagination-button slider-pagination-button-current" type="button">
+              <span class="visually-hidden">3 товар</span>
+            </button>
+          </li>
+        </ol>
+      </section>
+
+      <section class="catalog-category">
+        <ul class="catalog-category-list">
+          <li class="catalog-category-item">
+            <a class="catalog-category-item-link" href="#">
+              <img class="virtual-reality-icon" src="" alt="Иконка категории товара 'Виртуальная реальность'">
+              <span class="catalog-category-name">Виртуальная реальность</span>
+            </a>
+          </li>
+          <li class="catalog-category-item">
+            <a class="catalog-category-item-link" href="#">
+              <img class="selfie-monopod-icon" src="" alt="Иконка категории товара 'Моноподы для селфи'">
+              <span class="catalog-category-name">Моноподы для селфи</span>
+            </a>
+          </li>
+          <li class="catalog-category-item">
+            <a class="catalog-category-item-link" href="#">
+              <img class="action-camera-icon" src="" alt="Иконка категории товара 'Экшен-камеры'">
+              <span class="catalog-category-name">Экшен-камеры</span>
+            </a>
+          </li>
+          <li class="catalog-category-item">
+            <a class="catalog-category-item-link" href="#">
+              <img class="fitnes-bracelets-icon" src="" alt="Иконка категории товара 'Фитнес-браслеты'">
+              <span class="catalog-category-name">Фитнес-браслеты</span>
+            </a>
+          </li>
+          <li class="catalog-category-item">
+            <a class="catalog-category-item-link" href="#">
+              <img class="smart-clock-icon" src="" alt="Иконка категории товара 'Умные часы'">
+              <span class="catalog-category-name">Умные часы</span>
+            </a>
+          </li>
+          <li class="catalog-category-item">
+            <a class="catalog-category-item-link" href="#">
+              <img class="quadrocopters-icon" src="" alt="Иконка категории товара 'Квадрокоптеры'">
+              <span class="catalog-category-name">Квадрокоптеры</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
 
   </body>
 </html>
