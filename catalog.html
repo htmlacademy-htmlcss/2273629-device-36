@@ -130,41 +130,49 @@
             <h2 class="visuallu-hidden">Список товаров с фильтрами</h2>
 
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/">
+              <h3 class="catalog-filter-subtitle">Фильтр:</h3>
 
                 <fieldset class="catalog-filter-group">
-                    <legend class="catalog-filter-title">Цвет</legend>
-                        <ul class="catalog-filter-list">
-                            <li class="catalog-filter-item">
-                                <label class="control">
-                                    <input class="control-input" type="checkbox" name="Чёрный" checked>
-                                    Чёрный
-                                </label>
-                            </li>
-                            <li class="catalog-filter-item">
-                                <label class="control">
-                                    <input class="control-input" type="checkbox" name="белый" checked>
-                                    Белый
-                                </label>
-                            </li>
-                            <li class="catalog-filter-item">
-                                <label class="control">
-                                    <input class="control-input" type="checkbox" name="Синий">
-                                    Синий
-                                </label>
-                            </li>
-                            <li class="catalog-filter-item">
-                                <label class="control">
-                                    <input class="control-input" type="checkbox" name="Красный">
-                                    Красный
-                                </label>
-                            </li>
-                            <li class="catalog-filter-item">
-                                <label class="control">
-                                    <input class="control-input" type="checkbox" name="Розовый">
-                                    Розовый
-                                </label>
-                            </li>
-                        </ul>
+                  <legend class="catalog-filter-title">Стоимость</legend>
+                  <label class="control">
+                    <input class="control-input" type="range" min="0" max="5000" value="0" step="100">
+                  </label>
+                </fieldset>
+
+                <fieldset>
+                  <legend class="catalog-filter-title">Цвет</legend>
+                      <ul class="catalog-filter-list">
+                          <li class="catalog-filter-item">
+                              <label class="control">
+                                  <input class="control-input" type="checkbox" name="Чёрный" checked>
+                                  Чёрный
+                              </label>
+                          </li>
+                          <li class="catalog-filter-item">
+                               <label class="control">
+                                   <input class="control-input" type="checkbox" name="белый" checked>
+                                   Белый
+                              </label>
+                          </li>
+                           <li class="catalog-filter-item">
+                              <label class="control">
+                                   <input class="control-input" type="checkbox" name="Синий">
+                                   Синий
+                              </label>
+                          </li>
+                          <li class="catalog-filter-item">
+                              <label class="control">
+                                  <input class="control-input" type="checkbox" name="Красный">
+                                   Красный
+                              </label>
+                          </li>
+                           <li class="catalog-filter-item">
+                              <label class="control">
+                                  <input class="control-input" type="checkbox" name="Розовый">
+                                   Розовый
+                               </label>
+                           </li>
+                      </ul>
                 </fieldset>
 
                 <fieldset class="catalog-filter-group">
@@ -188,6 +196,7 @@
                 <button class="button" type="submit">Показать</button>
             </form>
 
+            <h3 class="catalog-filter-subtitle">Сортировка:</h3>
             <select class="select-contol" aria-label="Сортировка">
                 <option value="popular">Популярные</option>
                 <option value="cheap">Дешёвые</option>
