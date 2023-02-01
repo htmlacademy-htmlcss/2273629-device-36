@@ -4,7 +4,7 @@
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
-  src: url("fonts/raleway/raleway-800.woff2");
+  src: url("../fonts/raleway/raleway-800.woff2");
   font-display: swap;
 }
 
@@ -12,7 +12,7 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/rubik/rubik-400.woff2");
+  src: url("../fonts/rubik/rubik-400.woff2");
   font-display: swap;
 }
 
@@ -20,7 +20,7 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/rubik/rubik-700.woff2");
+  src: url("../fonts/rubik/rubik-700.woff2");
   font-display: swap;
 }
 
@@ -141,6 +141,46 @@ body {
   font-size: 18px;
   line-height: 20px;
   color: #000000;
+}
+
+.product-card-price {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.pagination-show-more {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.pagination-link {
+  font-family: 'Rubik';
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+  text-decoration: none;
+}
+
+.pagination-prev,
+.pagination-next {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.pagination-disabled {
+  color: #444444;
+}
+
+
+
+
+.ascending-sort-button {
+  text-decoration: none;
 }
 
 /* /Main inner index */
