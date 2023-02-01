@@ -1,0 +1,263 @@
+/* Fonts */
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("fonts/raleway/raleway-800.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/rubik/rubik-400.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/rubik/rubik-700.woff2");
+  font-display: swap;
+}
+
+/* /Fonts */
+
+/* Basic style */
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* Basic style */
+
+
+
+/* Page header*/
+
+.page-header {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.page-header a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navigation-user {
+  font-family: "Rubik", sans-serif;
+  line-height: 30px;
+  color: inherit;
+}
+
+.navigation-user-search,
+.search-button {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+
+.navigation-main {
+  color: inherit;
+  text-transform: uppercase;
+}
+
+/* /Page header */
+
+/* Main index */
+/* Section Adversting Item */
+
+.adversting-item a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.item-description-title {
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.item-description-text {
+  font-family: "Rubik", sans-serif;
+  line-height: 30px;
+  color: #444444;
+}
+
+.item-description-link {
+  text-transform: uppercase;
+}
+
+.characteristic-list {
+  font-family: "Rubik", sans-serif;
+  line-height: 30px;
+  color: #444444;
+}
+
+.characteristic-title {
+  font-size: 36px;
+}
+.characteristic-descript {
+  font-size: 16px;
+}
+
+
+
+
+/* /Section Adversting Item */
+
+/* Section Catalog Category */
+
+.catalog-category-list a {
+  line-height: 24px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.catalog-category-block {
+  width: 160px;
+  height: 160px;
+  background-color: #FFE17F;
+}
+
+/* /Section Catalog Category */
+
+/* Section Information */
+
+.information-item {
+  text-align: center;
+  color: inherit;
+  background-color: #FFE17F;
+  text-transform: uppercase;
+}
+
+.current-item {
+  color: #FFE17F;
+  background-color: #000000;
+}
+
+.information-title {
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.information-description-text {
+  font-family: 'Rubik', sans-serif;
+  line-height: 30px;
+  color: #444444;
+}
+
+/* /Section Information */
+
+/* Section Contacts Info */
+
+.about-us-link,
+.contacts-info-link {
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.delivery-rare-title {
+  text-align: center;
+  font-size: 20px;
+  line-height: 23px;
+  color: inherit;
+}
+
+.about-us-title,
+.contacts-title {
+  font-size: 50px;
+  line-height: 50px;
+  color: inherit;
+}
+
+.about-us-text,
+.contacts-text,
+.contacts-schedule {
+  font-family: "Rubik", sans-serif;
+  line-height: 30px;
+  color: #444444;
+}
+
+.transport-companies-list {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.contacts-address-subtitle,
+.contacts-date-subtitle {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.contacts-phone {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* /Section Contacts Info */
+
+/* Section Subscrible */
+
+.subscrible-title {
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.subscrible-info,
+.subscrible-input,
+.subscrible-info-free {
+  font-family: "Rubik", sans-serif;
+  line-height: 30px;
+  color: #444444;
+}
+
+.subscrible-button {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+/* /Section Subscrible */
+/* /Main index */
+
+/* Page footer */
+
+.page-footer {
+  color: #ffffff;
+  background-color: #444444;
+}
+
+.page-footer-menu-link {
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.page-footer-item,
+.footer-contacts-phone  {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.footer-contacts-phone {
+  color: inherit;
+  text-decoration: underline;
+}

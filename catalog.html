@@ -2,8 +2,8 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/catalog-style.css">
+
     <title>HTML Academy: Девайс Каталог</title>
 </head>
 <body>
@@ -12,6 +12,7 @@
           <a class="navigation-logo" href="#">
             <img class="page-header-logo" src="images/page-header/header-logo.svg" width="145" height="36" alt="Логотип сайта 'Девайс'">
           </a>
+          <img class="header-background" src="images/page-header/header-background.png" alt="Жёлтый прямоугольник">
           <ul class="navigation-list navigation-user">
             <li class="navigation-user-item">
               <form class="navigation-user-search-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -153,7 +154,7 @@
                         <li class="catalog-filter-item">
                             <label class="control">
                                 <input class="control-input" type="radio" name="bluetooth-support" value="yes" checked>
-                                Да
+                                Есть
                             </label>
                         </li>
                         <li class="catalog-filter-item">
@@ -165,14 +166,14 @@
                     </ul>
                 </fieldset>
 
-                <button class="button" type="submit">Показать</button>
+                <button class="button show-button" type="submit">Показать</button>
             </form>
 
             <h3 class="catalog-filter-subtitle">Сортировка:</h3>
             <select class="select-contol" aria-label="Сортировка">
-                <option value="popular">Популярные</option>
-                <option value="cheap">Дешёвые</option>
-                <option value="expensive">Дорогие</option>
+                <option class="select-control-options" value="popular">Популярные</option>
+                <option class="select-control-options" value="cheap">Дешёвые</option>
+                <option class="select-control-options" value="expensive">Дорогие</option>
             </select>
 
             <a class="button ascending-sort-button" href="#">
