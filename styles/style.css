@@ -1,0 +1,805 @@
+/* Fonts */
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/raleway/raleway-800.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik/rubik-400.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik/rubik-700.woff2");
+  font-display: swap;
+}
+
+/* /Fonts */
+
+/* Basic style */
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+/* Basic style */
+
+
+
+/* Page header*/
+
+.page-header {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.page-header a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Navigation styles */
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  display: flex;
+  width: 1040px;
+  margin: 0 auto;
+  font-family: "Rubik", sans-serif;
+  line-height: 30px;
+  color: inherit;
+}
+
+
+.navigation-user-search-form {
+  width: 517px;
+}
+
+.user-login {
+  width: 231px;
+}
+
+.login-button {
+  width: 81px;
+}
+
+.user-compare-and-basket {
+  width: 240px;
+}
+
+.compare-button {
+  width: 105px;
+}
+
+.basket-button {
+  width: 100px;
+  margin-left: 18px;
+}
+
+.navigation-user-search,
+.search-button {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+
+.navigation-main {
+  display: flex;
+  width: 1040px;
+  margin: 0 auto;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+.navigation-main-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.navigation-main-item {
+  width: 127px;
+}
+
+.navigation-inner-menu {
+  display: flex;
+  width: 1160px;
+}
+
+.inner-menu-list {
+  display: flex;
+  margin: 0 auto;
+}
+
+.inner-menu-item {
+  width: 211px;
+}
+
+
+/* /Page header */
+
+/* Main index */
+
+.page-container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+/* Section Adversting Item */
+
+.adversting-item {
+  display: flex;
+  flex-direction: column;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.adversting-list {
+  margin: 0;
+  padding: 0;
+}
+
+.adversting-list {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.adversting-list-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.adversting-item-photos {
+  width: 560px;
+}
+
+.adversting-item-description {
+  width: 560px;
+}
+
+
+.adversting-list-item a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.item-description-title {
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.item-description-text {
+  font-family: "Rubik", sans-serif;
+  line-height: 30px;
+  color: #444444;
+}
+
+.item-description-link {
+  text-transform: uppercase;
+}
+
+.characteristic-list {
+  margin: 0;
+  padding: 0;
+  width: 307px;
+  font-family: "Rubik", sans-serif;
+  line-height: 30px;
+  color: #444444;
+}
+
+.characteristic-title {
+  font-size: 36px;
+}
+.characteristic-descript {
+  font-size: 16px;
+}
+
+.adversting-indicator-list {
+  display: flex;
+  width: 76px;
+  margin: 0 auto;
+}
+
+
+
+
+
+/* /Section Adversting Item */
+
+/* Section Catalog Category */
+
+.catalog-category {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.catalog-category-list {
+  display: flex;
+  width: 1160px;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.catalog-category-item {
+  width: 160px;
+}
+
+.catalog-category-list a {
+  line-height: 24px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.catalog-category-block {
+  display: flex;
+  width: 160px;
+  height: 160px;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFE17F;
+}
+
+.selfie-monopod-icon {
+  align-self: flex-end;
+}
+
+/* /Section Catalog Category */
+
+/* Section Information */
+
+.information {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.information-list {
+  width: 287px;
+  margin: 0;
+  padding: 0;
+}
+
+.information-description {
+  display: flex;
+  width: 695px;
+  margin: 0 auto;
+}
+
+.information-item {
+  text-align: center;
+  color: inherit;
+  background-color: #FFE17F;
+  text-transform: uppercase;
+}
+
+.current-item {
+  color: #FFE17F;
+  background-color: #000000;
+}
+
+.information-title-block {
+  width: 452px;
+}
+
+.information-title {
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.information-description-text {
+  font-family: 'Rubik', sans-serif;
+  line-height: 30px;
+  color: #444444;
+}
+
+/* /Section Information */
+
+/* Section Contacts Info */
+
+.contact-info {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.delivery-rare {
+  display: flex;
+  width: 1160px;
+  justify-content: space-between;
+  margin: 0 auto;
+  background-color: rgba(220, 220, 220, 0.5);
+}
+
+.delivery-car-block {
+  display: flex;
+  width: 125px;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFE17F;
+}
+
+.delivery-exlamination-block {
+  display: flex;
+  width: 125px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us-link,
+.contacts-info-link {
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.delivery-rare-title {
+  text-align: center;
+  font-size: 20px;
+  line-height: 23px;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+.contacts-info-container {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.contacts-info-about-us {
+
+}
+
+.about-us-title,
+.contacts-title {
+  font-size: 50px;
+  line-height: 50px;
+  color: inherit;
+}
+
+.about-us-text,
+.contacts-text,
+.contacts-schedule {
+  font-family: "Rubik", sans-serif;
+  line-height: 30px;
+  color: #444444;
+}
+
+.transport-companies-list {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.contacts-address-subtitle,
+.contacts-date-subtitle {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.contacts-phone {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* /Section Contacts Info */
+
+/* Section Subscrible */
+
+.subscrible {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.subscrible-text {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.subscrible-title {
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.subscrible-form-container {
+  display: flex;
+  width: 1160px;
+  justify-content: space-between;
+}
+
+.subscribtion-form {
+  width: 810px;
+
+}
+
+.subscrible-input {
+  width: 557px;
+}
+
+.subscrible-button {
+  width: 253px;
+}
+
+.subscrible-info-free {
+  width: 160px;
+}
+
+.subscrible-info,
+.subscrible-input,
+.subscrible-info-free {
+  font-family: "Rubik", sans-serif;
+  line-height: 30px;
+  color: #444444;
+}
+
+.subscrible-button {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+/* /Section Subscrible */
+/* /Main index */
+
+/* Page footer */
+
+.page-footer {
+  color: #ffffff;
+  background-color: #444444;
+}
+
+.page-footer-container {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 62px 140px;
+  justify-content: space-between;
+}
+
+.page-footer-address-container {
+  display: flex;
+  flex-direction: column;
+  width: 239px;
+  justify-content: space-between;
+}
+
+.page-footer-logo {
+  width: 145px;
+}
+
+.page-footer-contact-text {
+  width: 239px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.page-footer-menu-social-container {
+  display: flex;
+  flex-direction: column;
+  width: 444px;
+  justify-content: space-between;
+}
+
+.page-footer-menu-list {
+  display: flex;
+  width: 444px;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.page-footer-menu-link {
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.page-footer-social-list {
+  display: flex;
+  width: 145px;
+  margin: 0 auto;
+  padding: 0;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.page-footer-phone-container {
+  display: flex;
+  flex-direction: column;
+  width: 175px;
+  align-self: flex-end;
+}
+
+.page-footer-phone-nubmer {
+  width: 175px;
+}
+
+.footer-contacts-phone  {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: inherit;
+  text-decoration: underline;
+}
+
+.page-footer-html-academy-logo {
+  width: 115px;
+  margin-left: auto;
+}
+
+
+
+
+/* /Page Footer */
+
+/* Catalog Page styles */
+
+/* Main inner index */
+/* Inner header */
+
+.inner-header {
+  display: flex;
+  flex-direction: column;
+  width: 1079px;
+  margin: 0 auto;
+}
+
+.inner-header-title {
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.breadcrumbs-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-start;
+  list-style: none;
+}
+
+.breadcrumb-item {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.breadcrubs-item:not(:first-child) {
+  margin-left: 16px;
+}
+
+.breadcrumb-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* /Inner header*/
+
+/* Section Catalog product */
+
+.catalog-product-container {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.catalog-filter-container {
+  display: flex;
+  width: 320px;
+}
+
+.catalog-sort-container {
+  display: flex;
+  flex-direction: row;
+  width: 840px;
+  justify-content: space-between;
+}
+
+.select-container {
+  width: 141px;
+}
+
+.sort-buttons-container {
+  display: flex;
+  width: 60px;
+  justify-content: space-between;
+}
+
+.catalog-filter {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.catalog-filter-subtitle {
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.catalog-filter-title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.control {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.filter-show-button {
+  display: flex;
+  margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.select-control-options {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.product-card-container {
+  display: flex;
+  flex-direction: column;
+  width: 840px;
+}
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.product-card {
+  display: flex;
+  width: 760px;
+  justify-content: space-between;
+}
+
+.product-card-link {
+  text-decoration: none;
+}
+
+.product-card-title {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.product-card-price {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.show-more-button {
+  display: flex;
+  width: 760px;
+  padding: 18px 0;
+  justify-content: center;
+  outline: 3px solid #E5E5E5;
+  outline-offset: -3px;
+}
+
+.show-more-button-link {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.pagination-container {
+  display: flex;
+  width: 760px;
+  padding: 25px 0;
+  background-color:  #EBEBEB;
+  justify-content: space-between;
+}
+
+.pagination-list {
+  display: flex;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.pagination-item {
+  width: 40px;
+}
+
+.pagination-prev-button,
+.pagination-next-button {
+  display: flex;
+  width: 128px;
+  justify-content: center;
+}
+
+.pagination-link {
+  font-family: 'Rubik';
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+  text-decoration: none;
+}
+
+.pagination-prev,
+.pagination-next {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.pagination-disabled {
+  color: #444444;
+}
+
+.sort-button-link {
+  text-decoration: none;
+}
+
+/* /Main inner index */
