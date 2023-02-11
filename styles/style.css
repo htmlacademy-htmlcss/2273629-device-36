@@ -44,8 +44,23 @@ body {
   background-color: #ffffff;
 }
 
+.visually-hidden {
+  posititon: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .main-container {
   flex-grow: 1;
+}
+
+section:not(:first-child) {
+  margin-top: 70px;
 }
 /* Basic style */
 
@@ -75,6 +90,7 @@ body {
 .navigation-list {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .navigation-user {
@@ -124,13 +140,22 @@ body {
   display: flex;
   width: 1040px;
   margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
   color: inherit;
   text-transform: uppercase;
 }
 
+.navigation-catalog-toggler {
+  display: flex;
+  width: 293px;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .navigation-main-list {
   display: flex;
-  margin-left: auto;
+  width: 471px;
 }
 
 .navigation-main-item {
@@ -171,13 +196,10 @@ body {
 }
 
 .adversting-list {
-  margin: 0;
-  padding: 0;
-}
-
-.adversting-list {
   width: 1160px;
   margin: 0 auto;
+  padding: 0;
+  list-style: none;
 }
 
 .adversting-list-item {
@@ -199,6 +221,20 @@ body {
   text-decoration: none;
 }
 
+.item-description-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.description-list-item:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.item-description-title-block {
+  width: 560px;
+}
+
 .item-description-title {
   font-size: 50px;
   line-height: 50px;
@@ -215,16 +251,22 @@ body {
 }
 
 .characteristic-list {
+  display: flex;
+  width: 307px;
   margin: 0;
   padding: 0;
-  width: 307px;
+  justify-content: space-between;
   font-family: "Rubik", sans-serif;
   line-height: 30px;
   color: #444444;
+  list-style: none;
 }
 
 .characteristic-title {
+  margin: 0;
+  padding: 0;
   font-size: 36px;
+  color: #000000;
 }
 .characteristic-descript {
   font-size: 16px;
@@ -235,9 +277,6 @@ body {
   width: 76px;
   margin: 0 auto;
 }
-
-
-
 
 
 /* /Section Adversting Item */
@@ -256,6 +295,7 @@ body {
   margin: 0;
   padding: 0;
   justify-content: space-between;
+  list-style: none;
 }
 
 .catalog-category-item {
@@ -285,26 +325,31 @@ body {
 
 /* Section Information */
 
-.information {
+.information-container {
   display: flex;
   width: 1160px;
   margin: 0 auto;
+  padding: 64px 0;
+  justify-content: space-between;
 }
 
-.information-list {
+.information-list-menu {
+  display: flex;
+  flex-flow: wrap column;
   width: 287px;
   margin: 0;
   padding: 0;
+  justify-content: space-between;
+  list-style: none;
 }
 
 .information-description {
   display: flex;
   width: 695px;
-  margin: 0 auto;
+  justify-content: space-between;
 }
 
 .information-item {
-  text-align: center;
   color: inherit;
   background-color: #FFE17F;
   text-transform: uppercase;
@@ -320,6 +365,7 @@ body {
 }
 
 .information-title {
+  margin: 0;
   font-size: 50px;
   line-height: 50px;
 }
@@ -334,7 +380,7 @@ body {
 
 /* Section Contacts Info */
 
-.contact-info {
+.contacts-info-container {
   width: 1160px;
   margin: 0 auto;
 }
@@ -343,13 +389,14 @@ body {
   display: flex;
   width: 1160px;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 0 auto 70px;
   background-color: rgba(220, 220, 220, 0.5);
 }
 
 .delivery-car-block {
   display: flex;
   width: 125px;
+  height: 100px;
   justify-content: center;
   align-items: center;
   background-color: #FFE17F;
@@ -358,6 +405,7 @@ body {
 .delivery-exlamination-block {
   display: flex;
   width: 125px;
+  height: 100px;
   justify-content: center;
   align-items: center;
 }
@@ -370,6 +418,7 @@ body {
 }
 
 .delivery-rare-title {
+  margin: 40px 0;
   text-align: center;
   font-size: 20px;
   line-height: 23px;
@@ -377,35 +426,55 @@ body {
   text-transform: uppercase;
 }
 
-.contacts-info-container {
+.contacts-info-inner-container {
   display: flex;
-  width: 1160px;
-  margin: 0 auto;
+  justify-content: space-between;
 }
 
 .contacts-info-about-us {
-
+  width: 520px;
 }
 
 .about-us-title,
 .contacts-title {
+  margin: 0;
   font-size: 50px;
   line-height: 50px;
   color: inherit;
 }
 
+.about-us-text-container {
+  display: flex;
+  flex-flow: column;
+  width: 520px;
+  justify-content: space-between;
+}
+
 .about-us-text,
 .contacts-text,
-.contacts-schedule {
+.contacts-schedule-list {
   font-family: "Rubik", sans-serif;
   line-height: 30px;
   color: #444444;
 }
 
 .transport-companies-list {
+  padding: 0;
   font-family: "Rubik", sans-serif;
   font-weight: 700;
   line-height: 20px;
+
+}
+
+.contacts-info-contacts {
+  width: 532px;
+}
+
+.contacts-text-container {
+  display: flex;
+  flex-flow: column;
+  width: 532px;
+  justify-content: space-between;
 }
 
 .contacts-address-subtitle,
@@ -415,6 +484,11 @@ body {
   font-size: 24px;
   line-height: 30px;
   color: #444444;
+}
+
+.contacts-schedule-list {
+  padding: 0;
+  list-style: none;
 }
 
 .contacts-phone {
@@ -427,23 +501,29 @@ body {
 /* Section Subscrible */
 
 .subscrible {
+  background-color: rgba(240, 240, 240, 1);
+}
+
+.subscrible-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: column;
   width: 1160px;
   margin: 0 auto;
 }
+
 
 .subscrible-text {
   display: flex;
   width: 1160px;
-  margin: 0 auto;
   justify-content: space-between;
 }
 
 .subscrible-title {
+  margin: 0;
   font-size: 50px;
   line-height: 50px;
 }
+
 
 .subscrible-form-container {
   display: flex;
@@ -624,6 +704,10 @@ body {
 
 /* Section Catalog product */
 
+.catalog-product {
+  background-color: rgba(240, 240, 240, 1);
+}
+
 .catalog-product-container {
   display: flex;
   width: 1160px;
@@ -640,6 +724,7 @@ body {
   flex-direction: row;
   width: 840px;
   justify-content: space-between;
+  align-items: center;
 }
 
 .select-container {
@@ -700,11 +785,25 @@ body {
   width: 840px;
 }
 
+.product-list-container {
+  display: flex;
+  flex-flow: column;
+  width: 840px;
+  padding: 70px 0;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 1);
+}
+
 .product-list {
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
+  list-style: none;
+}
+
+.product-list-item {
+  margin-bottom: 44px;
 }
 
 .product-card {
@@ -717,7 +816,15 @@ body {
   text-decoration: none;
 }
 
+.product-name-price-container {
+  display: flex;
+  margin-top: 32px;
+  justify-content: space-between;
+}
+
 .product-card-title {
+  width: 226px;
+  margin: 0;
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -726,9 +833,16 @@ body {
 }
 
 .product-card-price {
+  margin: 0;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   line-height: 21px;
+  color: rgba(68, 68, 68, 1);
+}
+
+.product-navigation-container {
+  display: flex;
+  flex-flow: column;
 }
 
 .show-more-button {
@@ -753,8 +867,9 @@ body {
   display: flex;
   width: 760px;
   padding: 25px 0;
-  background-color:  #EBEBEB;
   justify-content: space-between;
+  background-color:  #EBEBEB;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .pagination-list {
