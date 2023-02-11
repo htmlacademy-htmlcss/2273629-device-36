@@ -881,8 +881,8 @@ section:not(:first-child) {
   list-style: none;
 }
 
-.pagination-item {
-  width: 40px;
+.pagination-item-block {
+  padding: 10px;
 }
 
 .pagination-prev-button,
