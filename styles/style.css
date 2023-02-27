@@ -498,12 +498,30 @@ body {
 }
 
 .item-description-button {
-  width: 210px;
+  width: 220px;
+  padding: 10px 5px;
   letter-spacing: 0.2em;
+}
+
+.yellow-rectangle-button {
+  position: relative;
+  text-align: center;
 }
 
 .item-description-link {
   text-transform: uppercase;
+}
+
+.yellow-rectangle-button::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 8px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  background-color: rgba(255, 225, 127, 1);
 }
 
 .characteristic-list {
@@ -562,6 +580,18 @@ body {
 
 .indicator-button:disabled {
   opacity: 0.1;
+}
+
+.yellow-rectangle-button:hover::before{
+  height: 100%;
+}
+
+.yellow-rectangle-button:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+.yellow-rectangle-button:active::before{
+  background-color: #FFCC33;;
 }
 
 
@@ -678,18 +708,12 @@ body {
   width: 160px;
   padding: 10px 0 10px 0;
   color: inherit;
-  background-color: #FFE17F;
   text-transform: uppercase;
-}
-
-.current-item {
-  width: 280px;
-  color: #FFE17F;
-  background-color: #000000;
 }
 
 
 .information-button {
+  position: relative;
   display: block;
   width: 160px;
   padding: 0;
@@ -701,14 +725,44 @@ body {
   background-color: transparent;
 }
 
+.current-item {
+  position: relative;
+  width: 280px;
+  color: #FFE17F;
+  background-color: #000000;
+}
+
+.information-button::before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 8px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  background-color: #FFE17F;
+}
+
+.current-item:hover .information-button{
+  padding-left: 35px;
+}
+
+.current-item:focus{
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.current-item:active .information-button{
+  padding-left: 35px;
+}
+
 
 .information-button-text{
   font-family: 'Raleway';
   font-weight: 800;
-  text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  order: 0;
 }
 
 .information-title-block {
@@ -783,7 +837,6 @@ body {
 
 .about-us-link,
 .contacts-info-link {
-  position: relative;
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
@@ -833,30 +886,6 @@ body {
   color: inherit;
 }
 
-.about-us-link::before {
-  position: absolute;
-  content: "";
-  width: 270px;
-  height: 8px;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  z-index: -1;
-  background-color: #FFE17F;
-}
-
-
-.contacts-info-link::before {
-  position: absolute;
-  content: "";
-  width: 270px;
-  height: 8px;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  z-index: -1;
-  background-color: #FFE17F;
-}
 
 .about-us-text-container {
   display: flex;
@@ -880,10 +909,9 @@ body {
 
 .conctacts-info-button {
   width: 270px;
-  padding: 10px 6px;
+  padding: 10px 5px;
   letter-spacing: 0.2em;
 }
-
 
 
 .transport-companies-list {
@@ -1246,6 +1274,7 @@ body {
   flex-direction: column;
   width: 1079px;
   margin: 0 auto;
+  margin-top: 35px;
   margin-bottom: 35px;
 }
 
@@ -1264,10 +1293,22 @@ body {
   list-style: none;
 }
 
-.breadcrumb-item {
+.breadcrubs-item {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 20px;
+}
+
+.breadcrubs-item:hover{
+  opacity: 0.6;
+}
+
+.breadcrumb-link:focus{
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+.breadcrubs-item:active{
+  opacity: 0.3;
 }
 
 .breadcrubs-item:not(:first-child) {
@@ -1420,8 +1461,21 @@ body {
 }
 
 .product-card-link {
+  position: relative;
   text-decoration: none;
 }
+
+.product-card-link::after {
+  position: absolute;
+  content: "Подробнее";
+  z-index: -1;
+}
+
+
+.product-card-link:hover{
+  opacity: 0.6;
+}
+
 
 .product-name-price-container {
   display: flex;
