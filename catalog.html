@@ -168,9 +168,16 @@
                   <li class="group-list-item">
                     <fieldset class="catalog-filter-group">
                       <legend class="catalog-filter-title">Стоимость</legend>
-                      <label class="control">
-                        <input class="control-input" type="range" min="0" max="5000" value="0" step="100">
-                      </label>
+                      <div class="slider-input-container">
+                        <div class="label-container">
+                          <label class="range-slider-label one" for="slider-input-before"></label>
+                          <label class="range-slider-label second" for="slider-input-after"></label>
+                        </div>
+                        <div class="range-slider-input-container">
+                          <input class="range-slider-input" id="slider-input-before" type="number" placeholder="от 0">
+                          <input class="range-slider-input" id="slider-input-after" type="number" placeholder="до 5000">
+                        </div>
+                      </div>
                     </fieldset>
                   </li>
                   <li class="group-list-item">

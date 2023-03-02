@@ -1540,6 +1540,74 @@ body {
   list-style: none;
 }
 
+.slider-input-container {
+  display: flex;
+  flex-flow: column;
+  width: 200px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+.label-container {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.range-slider-label {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  margin-right: 60px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.one::after {
+  position: absolute;
+  content: "";
+  width: 99px;
+  top: 50%;
+  left: 100%;
+  border-bottom: 2px solid #000000;
+}
+
+.second::after {
+  position: absolute;
+  content: "";
+  width: 98px;
+  top: 50%;
+  left: 110%;
+  border-bottom: 2px solid #DCDCDC;
+}
+
+.range-slider-input-container {
+  display: flex;
+
+}
+
+.range-slider-input {
+  margin-right: -60px;
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
 .catalog-filter-list {
   margin: 0;
   padding: 0;
