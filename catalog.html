@@ -152,13 +152,7 @@
                     <a class="breadcrumb-link" href="index.html">Главная</a>
                 </li>
                 <li class="breadcrubs-item">
-                  <img class="arrow-right-icon" src="images/catalog-product/icon/breadcrumb-arrow-icon.svg" width="4" height="7" alt="Стрелка вправо">
-                </li>
-                <li class="breadcrubs-item">
                     <a class="breadcrumb-link" href="catalog.html">Каталог товаров</a>
-                <li class="breadcrubs-item">
-                  <img class="arrow-right-icon" src="images/catalog-product/icon/breadcrumb-arrow-icon.svg" width="4" height="7" alt="Стрелка вправо">
-                </li>
                 <li class="breadcrubs-item current-breadcrubs">
                     <a class="breadcrumb-link" href="#">Моноподы для селфи</a>
                 </li>
@@ -185,35 +179,40 @@
                       <legend class="catalog-filter-title">Цвет</legend>
                           <ul class="catalog-filter-list">
                               <li class="catalog-filter-item">
-                                  <label class="control">
-                                      <input class="control-input" type="checkbox" name="Чёрный" checked>
-                                      Чёрный
-                                  </label>
+                                <label class="filter-label">
+                                  <input class="checkbox-input" type="checkbox" name="black" checked>
+                                  <span class="checkbox-span"></span>
+                                  Чёрный
+                                </label>
                               </li>
                               <li class="catalog-filter-item">
-                                   <label class="control">
-                                       <input class="control-input" type="checkbox" name="белый" checked>
-                                       Белый
-                                  </label>
-                              </li>
-                               <li class="catalog-filter-item">
-                                  <label class="control">
-                                       <input class="control-input" type="checkbox" name="Синий">
-                                       Синий
-                                  </label>
+                                <label class="filter-label">
+                                  <input class="checkbox-input" type="checkbox" name="white" checked>
+                                  <span class="checkbox-span"></span>
+                                  Белый
+                                </label>
                               </li>
                               <li class="catalog-filter-item">
-                                  <label class="control">
-                                      <input class="control-input" type="checkbox" name="Красный">
-                                       Красный
-                                  </label>
+                                <label class="filter-label">
+                                  <input class="checkbox-input" type="checkbox" name="blue">
+                                  <span class="checkbox-span"></span>
+                                  Синий
+                                </label>
                               </li>
-                               <li class="catalog-filter-item">
-                                  <label class="control">
-                                      <input class="control-input" type="checkbox" name="Розовый">
-                                       Розовый
-                                   </label>
-                               </li>
+                              <li class="catalog-filter-item">
+                                <label class="filter-label">
+                                  <input class="checkbox-input" type="checkbox" name="red">
+                                  <span class="checkbox-span"></span>
+                                  Красный
+                                </label>
+                              </li>
+                              <li class="catalog-filter-item">
+                                <label class="filter-label" disabled="disabled">
+                                  <input class="checkbox-input" type="checkbox" name="pink" disabled>
+                                  <span class="checkbox-span"></span>
+                                  Розовый
+                                </label>
+                              </li>
                           </ul>
                     </fieldset>
                   </li>
@@ -222,16 +221,18 @@
                       <legend class="catalog-filter-title">Bluetooth</legend>
                       <ul class="catalog-filter-list">
                           <li class="catalog-filter-item">
-                              <label class="control">
-                                  <input class="control-input" type="radio" name="bluetooth-support" value="yes" checked>
-                                  Есть
-                              </label>
+                            <label class="filter-label">
+                              <input class="radio-input" type="radio" name="bluetooth-support" value="yes" checked>
+                              <span class="radio-span"></span>
+                              Есть
+                            </label>
                           </li>
                           <li class="catalog-filter-item">
-                              <label class="control">
-                                  <input class="control-input" type="radio" name="bluetooth-support" value="no">
-                                  Нет
-                              </label>
+                            <label class="filter-label">
+                              <input class="radio-input" type="radio" name="bluetooth-support" value="no">
+                              <span class="radio-span"></span>
+                              Нет
+                            </label>
                           </li>
                       </ul>
                     </fieldset>
@@ -246,22 +247,26 @@
             <div class="product-card-container">
               <div class="catalog-sort-container">
                 <h3 class="catalog-filter-subtitle">Сортировка:</h3>
-                <div class="select-container">
-                  <select class="select-contol" aria-label="Сортировка">
-                    <option class="select-control-options" value="popular">Популярные</option>
-                    <option class="select-control-options" value="cheap">Дешёвые</option>
-                    <option class="select-control-options" value="expensive">Дорогие</option>
-                </select>
+                <div class="dropdown-select-container">
+                  <select class="dropdown-select" name="select-category" aria-label="Сортировка">
+                    <option class="select-options" value="popular">Популярные</option>
+                    <option class="select-options" value="cheap">Дешёвые</option>
+                    <option class="select-options" value="expensive">Дорогие</option>
+                  </select>
                 </div>
                 <div class="sort-buttons-container">
                   <div class="ascending-sort-button">
                     <a class="sort-button-link ascending" href="#">
-                      <img class="ascending-sort-icon" src="images/catalog-product/icon/sort-arrow-up-icon.svg" width="11" height="10" alt="Иконка сортировки по возрастанию">
+                      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="12" height="10" fill="none">
+                        <path fill="#000" d="m6 0 5.5 10H.5"/>
+                      </svg>
                     </a>
                   </div>
                   <div class="descending-sort-button">
                     <a class="sort-button-link descending" href="#">
-                      <img class="descending-sort-icon" src="images/catalog-product/icon/sort-arrrow-down-icon.svg" width="11" height="10" alt="Иконка сортировки по убыванию">
+                      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="12" height="10" fill="none">
+                        <path fill="#000" d="M6 10 .5 0h11"/>
+                      </svg>
                     </a>
                   </div>
                 </div>
@@ -280,6 +285,7 @@
                           <p class="product-card-price">500 Р</p>
                         </div>
                       </a>
+                      <a class="product-more-info-button" href="#">Подробнее</a>
                     </div>
                   </li>
 
@@ -294,6 +300,7 @@
                         <p class="product-card-price">1500 Р</p>
                       </div>
                     </a>
+                    <a class="product-more-info-button" href="#">Подробнее</a>
                   </div>
                   </li>
 
@@ -308,6 +315,7 @@
                           <p class="product-card-price">2500 Р</p>
                         </div>
                       </a>
+                      <a class="product-more-info-button" href="#">Подробнее</a>
                     </div>
                   </li>
 
@@ -322,57 +330,46 @@
                           <p class="product-card-price">1500 Р</p>
                         </div>
                       </a>
+                      <a class="product-more-info-button" href="#">Подробнее</a>
                     </div>
                   </li>
 
                   <li class="product-list-item product-navigation">
-                    <div class="show-more-button">
-                      <a class="button show-more-button-link" href="#">Загрузить ещё</a>
-                    </div>
+                    <button class="show-more-button" type="button">
+                      Загрузить ещё
+                    </button>
                   </li>
 
                   <li class="product-list-item product-navigation">
                     <div class="pagination-container">
-                      <div class="pagination-prev-button">
-                        <a class="pagination-link pagination-prev pagination-disabled">
-                          Назад
-                        </a>
-                      </div>
+                      <a class="pagination-button pagination-prev" href="#">
+                        Назад
+                      </a>
                       <ul class="pagination-list">
                         <li class="pagination-item">
-                            <a class="pagination-link pagination-current">
-                              <div class="pagination-item-block">
-                                1
-                              </div>
+                            <a class="pagination-link pagination-current" href="#">
+                              1
                             </a>
                         </li>
                         <li class="pagination-item">
                             <a class="pagination-link" href="#">
-                              <div class="pagination-item-block">
-                                2
-                              </div>
+                              2
                             </a>
                         </li>
                         <li class="pagination-item">
                             <a class="pagination-link" href="#">
-                              <div class="pagination-item-block">
-                                3
-                              </div>
+                              3
                             </a>
                         </li>
                         <li class="pagination-item">
                             <a class="pagination-link" href="#">
-                              <div class="pagination-item-block">
-                                15
-                              </div>
+                              15
                             </a>
                         </li>
                       </ul>
-                      <div class="pagination-next-button">
-                        <a class="pagination-link pagination-next" href="#">
-                          Вперёд
+                      <a class="pagination-button pagination-next" href="#">
+                        Вперёд
                       </a>
-                      </div>
                     </div>
                   </li>
               </ul>
