@@ -38,19 +38,15 @@
                 </li>
 
                 <li class="navigation-user-item user-login">
-                  <div class="user-login-button">
-                    <a class="navigation-user-link login-button" href="#">
-                      <svg class="nav-user-svg-icon"  aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="15" height="12" fill="none">
-                        <path fill="#000" d="M1 12h13a6.3 6.3 0 0 0-4.7-5.5c1-.6 1.7-1.7 1.7-3C11 1.6 9.4 0 7.5 0A3.5 3.5 0 0 0 4 3.5c0 1.3.7 2.4 1.7 3A6.3 6.3 0 0 0 1 12Z"/>
-                      </svg>
-                      Коля Петухов
-                    </a>
-                  </div>
-                  <div class="user-logout-button">
-                    <a class="navigation-user-link logout-button" href="#">
-                      Выйти
-                    </a>
-                  </div>
+                  <a class="navigation-user-link login-button" href="#">
+                    <svg class="nav-user-svg-icon"  aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="15" height="12" fill="none">
+                      <path fill="#000" d="M1 12h13a6.3 6.3 0 0 0-4.7-5.5c1-.6 1.7-1.7 1.7-3C11 1.6 9.4 0 7.5 0A3.5 3.5 0 0 0 4 3.5c0 1.3.7 2.4 1.7 3A6.3 6.3 0 0 0 1 12Z"/>
+                    </svg>
+                    Коля Петухов
+                  </a>
+                  <a class="navigation-user-link logout-button" href="#">
+                    Выйти
+                  </a>
                 </li>
                 <li class="navigation-user-item user-compare-and-basket">
                   <div class="compare-button">
@@ -166,14 +162,21 @@
                   <li class="group-list-item">
                     <fieldset class="catalog-filter-group">
                       <legend class="catalog-filter-title">Стоимость</legend>
-                      <div class="slider-input-container">
-                        <div class="label-container">
-                          <label class="range-slider-label one" for="slider-input-before"></label>
-                          <label class="range-slider-label second" for="slider-input-after"></label>
+                      <div class="range">
+                        <div class="range-scale">
+                          <div class="range-bar" style="width: 119px; left: -2px;">
+                            <button class="range-toggle toggle-min" type="button"></button>
+                            <button class="range-toggle toggle-max" type="button"></button>
+                          </div>
                         </div>
-                        <div class="range-slider-input-container">
-                          <input class="range-slider-input" id="slider-input-before" type="number" placeholder="от 0">
-                          <input class="range-slider-input" id="slider-input-after" type="number" placeholder="до 5000">
+
+                        <div class="range-wrapper-inputs">
+                          <label class="range-slider-label">
+                            <input class="range-slider-input min-input" type="number" placeholder="от 0">
+                          </label>
+                          <label class="range-slider-label">
+                            <input class="range-slider-input max-input" type="number" placeholder="до 5000">
+                          </label>
                         </div>
                       </div>
                     </fieldset>
