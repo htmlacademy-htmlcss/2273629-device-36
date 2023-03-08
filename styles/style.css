@@ -1780,7 +1780,7 @@ body {
   right: 8%;
   border-radius: 50%;
   background-color: #FFE17F;
-  background-image: url("/images/other-icon/modal-exclamation-mark-icon.svg");
+  background-image: url("../images/other-icon/modal-exclamation-mark-icon.svg");
   background-repeat: no-repeat;
   background-position: 49% 50%;
   cursor: pointer;
