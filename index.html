@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/style.css">
-
+    <link rel="icon" href="favicon.ico">
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
@@ -55,56 +55,58 @@
                         Сравнить
                       </a>
                     </div>
-                    <div class="basket-button">
-                      <a class="navigation-user-link basket-button-svg" href="#">
-                        <svg class="nav-user-svg-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none">
-                          <g clip-path="url(#a)">
-                            <path fill="#000" d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z"/>
-                          </g>
-                          <defs>
-                            <clipPath id="a">
-                              <path fill="#fff" d="M0 0h16v14H0z"/>
-                            </clipPath>
-                          </defs>
-                        </svg>
-                        Корзина
-                      </a>
-                    </div>
-                    <div class="popover popover-basket">
-                      <div class="popover-basket-content">
-                        <h2 class="popover-basket-title visually-hidden">Корзина</h2>
-                        <ul class="popover-basket-list">
-                          <li class="popover-basket-item">
-                            <a class="popover-basket-item-link" href="#" >
-                              <div class="popover-product-image-container">
-                                <img src="images/catalog-product/product-1.jpg" width="40" alt="Любительская селфи-палка">
-                              </div>
-                              <span class="popover-product-name">
-                                Любительская селфи-палка
-                              </span>
+                    <div class="basket-popover-wrapper">
+                      <div class="basket-button">
+                        <a class="navigation-user-link basket-button-svg" href="#">
+                          <svg class="nav-user-svg-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none">
+                            <g clip-path="url(#a)">
+                              <path fill="#000" d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z"/>
+                            </g>
+                            <defs>
+                              <clipPath id="a">
+                                <path fill="#fff" d="M0 0h16v14H0z"/>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                          Корзина
+                        </a>
+                      </div>
+                      <div class="popover popover-basket">
+                        <div class="popover-basket-content">
+                          <h2 class="popover-basket-title visually-hidden">Корзина</h2>
+                          <ul class="popover-basket-list">
+                            <li class="popover-basket-item">
+                              <a class="popover-basket-item-link" href="#" >
+                                <div class="popover-product-image-container">
+                                  <img src="images/catalog-product/product-1.jpg" width="40" alt="Любительская селфи-палка">
+                                </div>
+                                <span class="popover-product-name">
+                                  Любительская селфи-палка
+                                </span>
+                              </a>
+                              <button class="button popover-delete-product-button" type="button"></button>
+                            </li>
+                            <li class="popover-basket-item">
+                              <a class="popover-basket-item-link" href="#" >
+                                <div class="popover-product-image-container">
+                                  <img src="images/catalog-product/product-2.jpg" width="40" alt="профессиональная селфи-палка">
+                                </div>
+                                <span class="popover-product-name">
+                                  Профессиональная селфи-палка
+                                </span>
+                              </a>
+                              <button class="button popover-delete-product-button" type="button"></button>
+                            </li>
+                          </ul>
+                          <div class="popover-basket-product-price">
+                            <span class="popover-product-count">Товаров: 2</span>
+                            <span class="popover-product-price">Сумма: 2000 ₽</span>
+                          </div>
+                          <div class="button popover-open-basket-button-container">
+                            <a class="popover-open-basket-button" href="#">
+                              <span class="popover-button-text">Открыть корзину</span>
                             </a>
-                            <button class="button popover-delete-product-button" type="button"></button>
-                          </li>
-                          <li class="popover-basket-item">
-                            <a class="popover-basket-item-link" href="#" >
-                              <div class="popover-product-image-container">
-                                <img src="images/catalog-product/product-2.jpg" width="40" alt="профессиональная селфи-палка">
-                              </div>
-                              <span class="popover-product-name">
-                                Профессиональная селфи-палка
-                              </span>
-                            </a>
-                            <button class="button popover-delete-product-button" type="button"></button>
-                          </li>
-                        </ul>
-                        <div class="popover-basket-product-price">
-                          <span class="popover-product-count">Товаров: 2</span>
-                          <span class="popover-product-price">Сумма: 2000 ₽</span>
-                        </div>
-                        <div class="button popover-open-basket-button-container">
-                          <a class="popover-open-basket-button" href="#">
-                            <span class="popover-button-text">Открыть корзину</span>
-                          </a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -114,8 +116,38 @@
             </li>
             <li class="list-container-item">
               <div class="navigation-main">
-                <div class="navigation-catalog-toggler">
-                  <button class="button catalog-button-toggler">Каталог товаров</button>
+                <div class="catalog-button-wrapper">
+                  <div class="navigation-catalog-toggler">
+                    <button class="button catalog-button-toggler">Каталог товаров</button>
+                  </div>
+                  <div class="navigation-inner-menu">
+                    <ul class="inner-menu-list">
+                      <li class="inner-menu-item">
+                        <a class="inner-menu-link" href="#">
+                          Виртуальная реальность
+                        </a>
+                        <a class="inner-menu-link" href="#">
+                          Моноподы для селфи
+                        </a>
+                        <a class="inner-menu-link" href="#">
+                          Экшн-камеры
+                        </a>
+                      </li>
+                      <li class="inner-menu-item">
+                        <a class="inner-menu-link" href="#">
+                          Фитнес-браслеты
+                        </a>
+                        <a class="inner-menu-link" href="#">
+                          Умные часы
+                        </a>
+                      </li>
+                      <li class="inner-menu-item">
+                        <a class="inner-menu-link" href="#">
+                          Квадрокоптеры
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
                 <ul class="navigation-list navigation-main-list">
                   <li class="navigation-main-item delivery-button">
@@ -138,37 +170,7 @@
             </li>
           </ul>
         </nav>
-        <div class="navigation-inner-menu">
-          <ul class="inner-menu-list">
-            <li class="inner-menu-item">
-              <a class="inner-menu-link" href="#">
-                Виртуальная реальность
-              </a>
-              <br>
-              <a class="inner-menu-link" href="#">
-                Моноподы для селфи
-              </a>
-              <br>
-              <a class="inner-menu-link" href="#">
-                Экшн-камеры
-              </a>
-            </li>
-            <li class="inner-menu-item">
-              <a class="inner-menu-link" href="#">
-                Фитнес-браслеты
-              </a>
-              <br>
-              <a class="inner-menu-link" href="#">
-                Умные часы
-              </a>
-            </li>
-            <li class="inner-menu-item">
-              <a class="inner-menu-link" href="#">
-                Квадрокоптеры
-              </a>
-            </li>
-          </ul>
-        </div>
+
       </div>
     </header>
 
@@ -178,15 +180,16 @@
           <h2 class="adversting-item-title visually-hidden">Галерея товаров</h2>
           <ol class="adversting-list">
             <li class="adversting-list-item current-slide">
+              <div class="adversting-item-rectangle">
+                <span class="slide-number">01</span>
+              </div>
               <div class="adversting-item-photos">
                 <div class="adversting-item-photo-container">
                   <img class="slider-image" src="images/page-header/gallery/gallery-1.png" width="560" height="560" alt="Фото товара">
                 </div>
-                <div class="adversting-item-buttons">
-                  <div class="adversting-item-buttons-container">
-                    <button class="slider-button slider-prev" type="button"></button>
-                    <button class="slider-button slider-next" type="button"></button>
-                  </div>
+                <div class="adversting-item-buttons-container">
+                  <button class="slider-button slider-prev" type="button"></button>
+                  <button class="slider-button slider-next" type="button"></button>
                 </div>
               </div>
 
@@ -194,9 +197,13 @@
                 <ul class="item-description-list">
                   <li class="description-list-item">
                     <div class="item-description-title-block">
-                      <h2 class="item-description-title">Худеем правильно!</h2>
+                      <h2 class="item-description-title">
+                        Порхает как бабочка, жалит как пчела!
+                      </h2>
                       <p class="item-description-text">
-                        Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету
+                        Этот обычный, на первый взгляд,
+                        квадрокоптер оснащен мощным лазером,
+                        замаскированным под стандартную камеру.
                       </p>
                     </div>
                   </li>
@@ -209,11 +216,11 @@
                   </li>
                   <li class="description-list-item">
                     <dl class="characteristic-list">
-                      <div class="chatacteristic-item">
+                      <div class="characteristic-item">
                         <dt class="characteristic-title">800 м</dt>
                         <dd class="characteristic-descript">Дальность полёта</dd>
                       </div>
-                      <div class="chatacteristic-item">
+                      <div class="characteristic-item">
                         <dt class="characteristic-title">50 м</dt>
                         <dd class="characteristic-descript">Радиус поражения</dd>
                       </div>
@@ -224,6 +231,9 @@
             </li>
 
             <li class="adversting-list-item visually-hidden">
+              <div class="adversting-item-rectangle">
+                <span class="slide-number">02</span>
+              </div>
               <div class="adversting-item-photos">
                 <div class="adversting-item-photo-container">
                   <img class="slider-image" src="images/page-header/gallery/gallery-2.png" width="560" height="560" alt="Фото товара">
@@ -238,9 +248,9 @@
 
               <div class="adversting-item-description">
                 <ul class="item-description-list">
-                  <li class="description-list-item">
+                  <li class="description-list-item ">
                     <div class="item-description-title-block">
-                      <h2 class="item-description-title">Худеем правильно!</h2>
+                      <h2 class="item-description-title">Худеем <br> правильно!</h2>
                       <p class="item-description-text">
                         Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету
                       </p>
@@ -255,7 +265,7 @@
                   </li>
                   <li class="description-list-item">
                     <dl class="characteristic-list">
-                      <div class="chatacteristic-item">
+                      <div class="characteristic-item">
                         <dt class="characteristic-title">48 часов</dt>
                         <dd class="characteristic-descript">Без подзарядки</dd>
                       </div>
@@ -266,6 +276,9 @@
             </li>
 
             <li class="adversting-list-item visually-hidden">
+              <div class="adversting-item-rectangle">
+                <span class="slide-number">03</span>
+              </div>
               <div class="adversting-item-photos">
                 <div class="adversting-item-photo-container">
                   <img class="slider-image" src="images/page-header/gallery/gallery-3.png" width="560" height="560" alt="Фото товара">
@@ -282,7 +295,7 @@
                 <ul class="item-description-list">
                   <li class="description-list-item">
                     <div class="item-description-title-block">
-                      <h2 class="item-description-title">Делай селфи, как Бен Стиллер!</h2>
+                      <h2 class="item-description-title">Делай селфи,<br> как Бен Стиллер!</h2>
                       <p class="item-description-text">
                         Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
                       </p>
@@ -297,15 +310,15 @@
                   </li>
                   <li class="description-list-item">
                     <dl class="characteristic-list">
-                      <div class="chatacteristic-item">
+                      <div class="characteristic-item">
                         <dt class="characteristic-title">8.5 м</dt>
                         <dd class="characteristic-descript">Длина палки</dd>
                       </div>
-                      <div class="chatacteristic-item">
+                      <div class="characteristic-item">
                         <dt class="characteristic-title">5 кг</dt>
                         <dd class="characteristic-descript">Вес палки</dd>
                       </div>
-                      <div class="chatacteristic-item">
+                      <div class="characteristic-item">
                         <dt class="characteristic-title">Карбон</dt>
                         <dd class="characteristic-descript">Материал</dd>
                       </div>
@@ -656,7 +669,7 @@
       </div>
     </footer>
 
-    <div class="modal-container">
+    <!-- <div class="modal-container">
       <div class="modal modal-auth">
         <section class="modal-content">
           <h2 class="modal-title">
@@ -701,6 +714,6 @@
           </form>
         </section>
       </div>
-    </div>
+    </div> -->
   </body>
 </html>
